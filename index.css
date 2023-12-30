@@ -2,11 +2,12 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+
 }
 
 main {
     width: 70%;
-    height: 900px;
+    height: auto;
     margin: auto;
     
 }
@@ -44,7 +45,7 @@ nav h3{
 
 nav ul {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 0.7fr 0.5fr 0.5fr;
+    grid-template-columns: 1fr 1fr 1fr 0.5fr 0.7fr 0.3fr;
     width: fit-content;
 }
 
@@ -56,14 +57,6 @@ nav li {
     text-align: center;
 }
 
-nav li a{
-    background-color: #000;
-    color: #fff;
-    padding: 5px 10px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
 
 
 
@@ -85,15 +78,26 @@ main {
 }
 
 .image-container{
-    text-align: center;
-    border-radius: 10px;
+    width: auto;
     overflow: hidden;
+    padding: 1rem;
+    margin: auto;
 }
 
 .image-container img {
-    width: 100%;
+    width: 320px;
+    height: 250px;
+    object-fit: cover;
     border-radius: 10px;
 }
+
+.image-container p{
+    bottom: 10px;
+    font-size: 10px;
+    padding: auto;
+    left: 10px;
+}
+
 
 .description-section {
     text-align: center;
@@ -115,18 +119,16 @@ main {
     color: #fff;
     padding: 10px 20px;
     border: none;
-    border-radius: 5px;
+    border-radius: 10px;
     cursor: pointer;
     font-weight: lighter;
     font-size: smaller;
 }
 
 .more-details-btn-w{
-    border:solid 1px #000;
-    background-color: #fff;
+    border: solid 1px #000;
     padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
+    border-radius: 10px;
     cursor: pointer;
     font-weight: lighter;
     font-size: smaller;
