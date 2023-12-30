@@ -2,12 +2,12 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-
 }
 
 main {
+    grid-area: main;
     width: 70%;
-    height: auto;
+    height: 900px;
     margin: auto;
     
 }
@@ -20,83 +20,78 @@ main {
         "main";
 }
 
-header {
-    grid-area: header;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    background-color: #f0f0f0;
-}
 
 
 
-nav {
-    grid-area: nav;
-}
+
 
 nav h3{
     font-family:Georgia, 'Times New Roman', Times, serif;
-    display: grid;
-    width: fit-content;
-    align-items: flex-end;
+    font-size: 20pt;
+    width:auto
+    align-items: flex-start;
 
 }
 
 nav ul {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 0.5fr 0.7fr 0.3fr;
-    width: fit-content;
+    grid-template-columns: 0.5fr 1fr 1fr 0.7fr 0.5fr 0.7fr;
+    s
 }
 
 nav li {
     list-style-type: none;
     font-weight: bold;
-    padding: 15px;
+    padding: 0px;
     margin: auto;
-    text-align: center;
+    
 }
 
+nav li a{
+    background-color: #ffffff;
+    color: #000000;
+    cursor: pointer;
+    font-size: 10pt;
+    font-weight: bold;
+}
 
 
 
 main {
     grid-area: main;
-    padding: 20px;
+    padding: auto;
 }
 
 .welcome-section {
     text-align: center;
-    padding: 50px;
+    padding: 10px;
 }
 
 .image-section {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    padding: 20px;
+    
+    gap: 10px;
+    margin: auto;
+   
 }
 
 .image-container{
-    width: auto;
+    text-align: center;
+    border-radius: 10px;
     overflow: hidden;
-    padding: 1rem;
-    margin: auto;
+    
+   
 }
 
+    
 .image-container img {
-    width: 320px;
-    height: 250px;
+    height: 280px;
+    width: 350px;
     object-fit: cover;
     border-radius: 10px;
 }
 
-.image-container p{
-    bottom: 10px;
-    font-size: 10px;
-    padding: auto;
-    left: 10px;
-}
 
 
 .description-section {
@@ -117,21 +112,22 @@ main {
 .more-details-btn {
     background-color: #000;
     color: #fff;
-    padding: 10px 20px;
+    padding: 10px 30px;
     border: none;
     border-radius: 10px;
     cursor: pointer;
     font-weight: lighter;
-    font-size: smaller;
+    font-size: 12pt;
 }
 
 .more-details-btn-w{
     border: solid 1px #000;
-    padding: 10px 20px;
+    
+    padding: 10px 30px;
     border-radius: 10px;
     cursor: pointer;
     font-weight: lighter;
-    font-size: smaller;
+    font-size: 12pt;
 
 }
 
