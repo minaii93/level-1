@@ -1,10 +1,33 @@
-.body{
+body{
     padding: 1rem;
     font-family: Arial, Helvetica, sans-serif;
 
 }
 
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #f0f0f0;
 
+
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav a{
+    text-decoration: none;
+    color: #333;
+}
 .galery{
     max-width: 700px;
     width: 100%;
@@ -15,6 +38,48 @@
     gap: 1rem;
 }
 
+.welcome-section{
+    text-align: center;
+    padding: 50px;
+
+}
+
+.image-section{
+    text-align: center;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.image-container{
+    text-align: left;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.image-container img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.desciption-section{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+
+}
+
+.more-details-btn{
+    background-color: #000;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
 .galery img{
     width: 100%;
     height: 100%;
