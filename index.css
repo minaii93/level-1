@@ -28,7 +28,7 @@ main {
 nav h3{
     font-family:Georgia, 'Times New Roman', Times, serif;
     font-size: 20pt;
-    width:auto
+    width:auto;
     align-items: flex-start;
 
 }
@@ -36,7 +36,7 @@ nav h3{
 nav ul {
     display: grid;
     grid-template-columns: 0.5fr 1fr 1fr 0.7fr 0.5fr 0.7fr;
-    s
+    
 }
 
 nav li {
@@ -64,13 +64,24 @@ main {
 
 .welcome-section {
     text-align: center;
-    padding: 10px;
+    padding-top: 20px;
+    margin: 0;
+    padding-bottom: 30px;
+}
+
+.welcome-section h1, p{
+    margin: 0;
+    
+}
+
+.welcome-section p{
+    font-family:Georgia, 'Times New Roman', Times, serif;
 }
 
 .image-section {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    
+    padding-top: 10px;
     gap: 10px;
     margin: auto;
    
@@ -95,16 +106,30 @@ main {
 
 
 .description-section {
-    text-align: center;
-    padding: 50px;
+    text-align: left;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 .description-container {
     display: grid;
-    grid-template-columns: 1fr minmax(200px, 200px);
-    gap: 20px;
-    max-width: 600px;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+    max-width: auto;
     margin: 0 auto;
+}
+
+.description-container-text{
+    padding-top: 70px;
+    padding-bottom: 50px;
+
+}
+.description-container img{
+    display: grid;
+    object-fit: cover;
+    width: 550px;
+    height: 420px;
+    border-radius: 10px;    
 }
 
 
@@ -112,22 +137,22 @@ main {
 .more-details-btn {
     background-color: #000;
     color: #fff;
-    padding: 10px 30px;
+    padding: 8px 40px;
     border: none;
-    border-radius: 10px;
+    border-radius: 15px;
     cursor: pointer;
     font-weight: lighter;
-    font-size: 12pt;
+    font-size: 10pt;
 }
 
 .more-details-btn-w{
     border: solid 1px #000;
     
-    padding: 10px 30px;
-    border-radius: 10px;
+    padding: 8px 40px;
+    border-radius: 15px;
     cursor: pointer;
     font-weight: lighter;
-    font-size: 12pt;
+    font-size: 10pt;
 
 }
 
